@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>term_project</title>
+        <link href="../main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <table class="top_bar">
+          <tr>
+            <td ><i id="menu"><img src="../imgs/menu.png" alt="" width="30" height="30"></i></td>
+            <td><i onclick="move_main()">온라인 전시회</i></td>
+            <td id="member"></td>
+            <td id="logout"></td>
+          </tr>
+        </table><br><br><br>
+        <table class="tables">
+            <th>전시회 추가</th>
+            <tr>
+                <td>
+                    <input type="file" name="image" id="image"><br>
+                    <input type="button" class="btn btn-success" value="이미지 추가" id="img_add" onclick="img_add()">
+                </td>
+            </tr>
+            <tr>
+                <td><div id="checking" class="text"></div></td>
+            </tr>
+            <tr>
+                <td>
+                    <br>
+                    <label for="title">제목 : </label><input type="text" id="title"><br><br>
+                    <label for="content">내용</label><br>
+                    <textarea id="content" style="height: 200px; width: 350px"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-primary" id="addOther" onclick="next_img()">NEXT</button>
+                    <button type="button" class="btn btn-primary" id="createEx" onclick="createEx()">CREAT</button>
+                </td>
+            </tr>
+        </table>
+        <div id="create" class="create_exhibition">
+            <p>생성될 전시회의 이름을 입력해 주십시오</p>
+            <label for="name">전시회 명 : </label>
+            <input id="name" name="name" type="text"><br><br>
+            <button type="button" id="cancle" class="btn btn-info" value="cancle">취소</button>
+            <input type="button" class="btn btn-primary" id='add' value="확인">
+        </div>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../main.js"></script>
+        <script src="./add.js"></script>
+        </body>
+</html>

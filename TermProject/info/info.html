@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>term_project</title>
+        <link href="../main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <table class="top_bar">
+          <tr>
+            <td ><i id="menu"><img src="../imgs/menu.png" alt="" width="30" height="30"></i></td>
+            <td><i onclick="move_main()">온라인 전시회</i></td>
+            <td id="member"></td>
+            <td id="logout"></td>
+          </tr>
+        </table>
+        <br><br><br><br>
+        <table class="tables">
+          <th colspan="2"> 개인정보</th>
+          <tr>
+            <td rowspan="3"><img src="../imgs/user_add.png" width="70" height="70"></td>
+            <td>I D :  <i id="info_id"> </i></td>
+          </tr>
+          <td id="classification"></td>
+          <tr>
+            <td>E-MAIL : <i id="info_email"></i></td>
+          </tr>
+        </table>
+        <div class="text-center"><input type="button" id="addInfo" value="개인 소개 추가하기"><div></div><br>
+        <button value="signout"  id="signout" class="btn btn-danger" onclick="signout_window()">탈퇴</button>
+          <div id="author_window" class="author_window">
+          </div>
+        <div id="signout_window" class="signout_window">
+            <p>정말 탈퇴하시겠습니까?</p>
+            <p>탈퇴를 위하여 본인 계정을 입력해 주십시오</p>
+            <label for="id">아이디 : </label>
+            <input id="id" name="id" type="text" required><br><br>
+            <label for="pw">비밀번호 : </label>
+            <input id="pw" name="pw" type="text" required><br>
+            <button type="button" id="cancle" class="btn btn-info" value="cancle" onclick="signout_cancle()">취소</button>
+            <button type="button" class="btn btn-danger" id="del">탈퇴</button>
+        </div>
+        
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../main.js"></script>
+        <script src="./info.js"></script>
+      </body>
+</html>

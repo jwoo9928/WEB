@@ -1,0 +1,204 @@
+.slideshow-container img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.prev {
+  float: left;
+}
+.next {
+  float: right;
+}
+#member {
+  font-size: 15px;
+  width: 50px;
+}
+
+#logout, #menu {
+  font-size: 15px;
+  width: 15px;
+}
+
+.top_bar {
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    background-color: skyblue;
+    color: aliceblue;
+    width: 100%;
+  }
+  .tables {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid #444444;
+    
+  }
+
+  .tables th {
+    text-align: center;
+  }
+
+  .signout_window {
+    background-color: blanchedalmond;
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 480px;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border: 2px outset;
+    border-radius: 5px;
+    z-index: 1;
+    margin: auto;
+    text-align: center;
+  }
+
+  * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {
+  display: none;
+  margin:auto;
+  text-align: center;
+}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 100%;
+  height: 300px;
+  margin: auto;
+}
+
+.img_button {
+  text-align: center;
+}
+
+.text {
+  display: table;
+  text-align: center;
+  overflow: auto;
+  border:1px solid black;
+  margin: auto;
+  min-height: 300px;
+  min-width: 400px;
+}
+
+.author-data {
+  background-color: ivory;
+  min-height: 100px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.create_exhibition{
+  background-color: blanchedalmond;
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 480px;
+  width: 300px;
+  height: 300px;
+  padding: 30px;
+  border: 2px outset;
+  border-radius: 5px;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+}
+
+#pice {
+  margin:0 auto;
+  display: block;
+  overflow: scroll;
+  height: 500px;
+  width: 600px;
+  margin: 0px auto;
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+#newEx {
+  text-align: center;
+}
+
+#newEx p {
+  text-align: center;
+  font-size: 20px;
+  border: 2px dashed paleturquoise;
+}
+
+.artshow {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.artshow img {
+  size: 50%;
+}
+
+#addInfo {
+  display: block;
+  text-align: center;
+  border: 2px solid skyblue;
+}
+
+#id {
+  border: 2px solid skyblue;
+  text-align: center;
+}
+
+.test {
+  display: block;
+  float:left;
+  padding: 5px;
+  text-align: center;
+}
+
+.tomain {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 45%;
+  display: block;
+}
+
+#signout {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 45%;
+  display: block;
+}
+
+#test11 {
+  border-bottom: 2px solid goldenrod;
+  width: 300px;
+  margin:0 auto;
+  text-align: center;
+}
+
+.line {
+  display: block;
+  text-align: center;
+  border: 2px solid skyblue;
+  width: 400px;
+  margin:0 auto;
+}
+
+#showAllArt {
+  background-color: skyblue;
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 480px;
+  width: 100px;
+  height: 20px;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+}

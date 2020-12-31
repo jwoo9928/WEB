@@ -1,0 +1,57 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    min-width: 100%;
+    text-align: center;
+}
+
+table td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.title {
+    height: 20px;
+}
+
+.data {
+    height: 300px;
+}
+
+.login {
+    display: none;
+    text-align: right;
+    position: absolute;
+    width: 230px;
+    height: 70px;
+    padding: 30px;
+    border: 2px outset;
+    border-radius: 5px;
+    background-color: coral;
+    z-index: 1;
+}
+
+.todo {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 110px;
+    padding: 30px;
+    border: 2px outset;
+    border-radius: 5px;
+    background-color: lightblue;
+    z-index: 1;
+}
+
+.member {
+    float: right;
+}
+
+.todobox {
+    border: 1px solid black;
+    background-color: skyblue;
+    top:50%; left:50%;
+    margin: 5px;
+    height: 30px;
+    
+}

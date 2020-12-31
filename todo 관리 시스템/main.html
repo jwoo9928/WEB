@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>웹프과제</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <input type="button" value="Add" id="Add" disabled="disabled">
+    <input type="button" value="Logout" id="logout" class="member">
+    <input type="button" value="Join" id="join" class="member">
+    <label id="success" class="member" val=""></label>
+    <br><br>
+
+    <p id="today"></p>
+    <p id="no"></p>
+    <table>
+      <tr class="title">
+          <td>(Sun)</td>
+          <td>(Mon)</td>
+          <td>(Tue)</td>
+          <td>(Wen)</td>
+          <td>(Thu)</td>
+          <td>(Fri)</td>
+          <td>(sat)</td>
+      </tr>
+      <tr class="data" onclick="modify(event)">
+          <td id="Sun"></td>
+          <td id="Mon"></td>
+          <td id="Tue"></td>
+          <td id="Wen"></td>
+          <td id="Thu"></td>
+          <td id="Fri"></td>
+          <td id="Sat"></td>
+      </tr>
+    </table>
+
+    <!-- 로그인 폼 -->
+    <div id="login" class="login">
+    <form name="login" method="POST">
+      <label for="id">id : </label>
+      <input id="text" type="text" required><br>
+      <label for="pw">password : </label>
+      <input id="pw" type="password" required><br>
+      <input type="button" value="LogIn" onclick="LoginOrSignin('Login')">
+      <input type="button" value="SignIn" onclick="LoginOrSignin('SignIn')">
+    </form>
+    </div>
+
+    <!--todo-->
+    <div id="todo" class="todo">
+    <form name="todo" method="POST">
+      <label for="date">date </label>
+      <input type="date" id="date">
+      <input type="time" id="time"><br>
+      <label for="title">title </label>
+      <input id="title" type="text" required><br>
+      <label for="description">description</label>
+      <input type="text" id="description" required><br><br>
+      <input type="button" id="Save" value="Save">
+      <input type="button" id="Update" value="Update" disabled="disabled">
+      <input type="button" id="Submit" value="Submit" disabled="disabled">
+      <input type="button" id="Delete" value="Delete" disabled="disabled">
+      <input type="button" value="Cancel" id="Cancel"> 
+    </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

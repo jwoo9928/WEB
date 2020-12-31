@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>term_project</title>
+        <link href="../main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <table class="top_bar">
+          <tr>
+            <td ><i id="menu"><img src="../imgs/menu.png" alt="" width="30" height="30"></i></td>
+            <td><i onclick="move_main()">온라인 전시회</i></td>
+            <td id="member"></td>
+            <td id="logout"></td>
+          </tr>
+        </table>
+          <table class="tables">
+            <th>전시회 삭제</th>
+            <tr>
+                <td><div id="allEx" class="text"></div></td>
+            </tr>
+        
+            <tr>
+                <td>
+                    <label for="selectAll">전체 선택</label>
+                    <input type="radio" value="selectAll" id="selectAll">
+                    <input type="button" class="btn btn-danger" id="del" value="삭제">
+                </td>
+            </tr>
+        </table>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../main.js"></script>
+        <script src="./del.js"></script>
+      </body>
+</html>

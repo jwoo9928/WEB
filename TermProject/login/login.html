@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>term_project</title>
+        <link href="../main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="utf-8">
+      </head>
+      <table class="top_bar">
+        <tr>
+          <td ><i id="menu"><img src="../imgs/menu.png" alt="" width="30" height="30"></i></td>
+          <td><i onclick="move_main()">온라인 전시회</i></td>
+          <td id="member"></td>
+        </tr>
+      </table>
+        <table class="tables">
+          <br><br>
+            <th colspan="2"> 로그인</th>
+            <tr>
+                <td colspan="2">
+                    I D <input type="text" id="id"><br><br>
+                    PW <input type="password" id="pw">
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+              <td ><input type="button" class="btn btn-primary" value="로그인" onclick="login()"></td>
+              <td><button type="button" class="btn btn-success" onclick="location.href='../signin/signin.html'">회원 가입</button></td>
+            </tr>
+        </table>
+        <div class="tomain">
+          <td><button id="tomain" class="btn btn-info">메인으로</button></td>
+        </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="../main.js"></script>
+      <script src="./login.js"></script>
+      </body>
+</html>

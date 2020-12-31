@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>term_project</title>
+        <link href="../main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <table class="top_bar">
+          <tr>
+            <td ><i id="menu"><img src="../imgs/menu.png" alt="" width="30" height="30"></i></td>
+            <td><i onclick="move_main()">온라인 전시회</i></td>
+            <td id="member"></td>
+            <td id="logout"></td>
+          </tr>
+        </table>
+        <p id="id">계정 : </p>
+        <div id="addInfo">
+            <br><br>
+            <label for="realName">본명 : </label>
+            <input type="text" id="realName">
+            <p>본인 이력</p>
+            <input type="date" id="date" required>
+            <input type="text" id="career" required>  
+            <input type="submit" class="btn btn-outline-info" id="careerAdd" value="추가">
+            <div id="addC"></div>
+            <p>SNS 주소</p>
+            <label for="twitter">트위터</label>
+            <input type="url" id="twitter"><br>
+            <label for="facebook">facebook</label>
+            <input type="url" id="facebook"><br>
+            <label for="instar">instargram</label>
+            <input type="url" id="instar"><br>
+            <p>본인 소개</p>
+            <textarea id="introduce" style="height: 200px; width: 350px"></textarea><br>
+            <input type="button" class="btn btn-outline-info" value='취소' onclick="move_main()">
+            <input type="button" class="btn btn-outline-info" value='저장' onclick="addInfo()">
+        </div>
+        <br><br><br><br>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../main.js"></script>
+        <script src="./addInfo.js"></script>
+      </body>
+</html>

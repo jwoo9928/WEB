@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>term_project</title>
+        <link href="../main.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <table class="top_bar">
+          <tr>
+            <td ><i id="menu"><img src="../imgs/menu.png" alt="" width="30" height="30"></i></td>
+            <td><i onclick="move_main()">온라인 전시회</i></td>
+            <td id="member"></td>
+            <td id="logout"></td>
+          </tr>
+        </table>
+        <div class="artshow" id="art">
+          <br>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <div class="mySlides fade">
+            <img src="../imgs/start.png" style="width:90%">
+          </div>
+          </div>
+          <br>
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+          <button id="author">작가페이지</button>
+          <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../main.js"></script>
+        <script src="./exhibition.js"></script>
+      </body>
+</html>

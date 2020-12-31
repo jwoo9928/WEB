@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>term_project</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <table class="top_bar">
+            <tr id = "topbar">
+              <td ><i id="menu"><img src="imgs/menu.png" id="cc" alt="" width="30" height="30"></i></td>
+              <td><i onclick="move_main()">온라인 전시회</i></td>
+              <td id="member"></td>
+              <td id="logout"></td>
+            </tr>
+          </table>
+          <div class="slideshow-container">
+            <br>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="mySlides fade" >
+              <img src="imgs/chirs.png" style="width:90%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/풍경2.jpeg" style="width:90%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="imgs/풍경3.jpeg" style="width:90%">
+            </div>
+            
+            </div>
+            <br>
+          
+          <div id="newEx">
+              <p>온라인 아트 갤러리</p>
+              <p>최근 전시회</p>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+          <script src="main2.js"></script>
+      </body>
+</html>

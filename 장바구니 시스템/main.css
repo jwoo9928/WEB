@@ -1,0 +1,44 @@
+table.green{
+  border: 3px solid #73AD21;
+  height: auto;
+  width: 100%;
+}
+i {
+  color: blue;
+}
+
+table,td,th.nomal-shipping {
+  font-family: arial, sans-serif;
+  border: 1px solid black;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.test {
+  text-align: left;
+}
+
+.carts {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 480px;
+  width: 400px;
+  height: 250px;
+  padding: 30px;
+  border: 2px outset;
+  border-radius: 5px;
+  background-color: skyblue;
+  z-index: 1;
+}
+
+p {
+  font-size: 20px;
+  color: blue;
+}
+
+.search {
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}

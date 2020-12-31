@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>웹프과제</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <table class="green">
+      <tr>
+        <td class="test">
+          <i id="cart" class="material-icons">shopping_cart</i>
+        </td>
+      </tr>
+    </table>
+    <div id="carts" class="carts">
+      <form name="basket" method="POST">
+      <p>상품 장바구니 등록</p>
+      <span>상품 이미지 : </span>
+      <input type="file" name="image" id="image"><br>
+      <label for="product_name">상품 이름 : </label>
+      <input id="product_name" name="product_name" type="text" required><br>
+      <label for="product_price">상품 가격 : </label>
+      <input id="product_price" name="product_price" type="text" size="10"><br>
+      <label for="product_count">상품 개수 : </label>
+      <input id="product_count" name="product_count" type="text" size="5">최대 50개 이하까지 선택가능<br>
+      <span>배송 방법 : </span>
+      <input type="radio" name="dilivery" id="nomal" value="nomal">
+      <label for="nomal">일반 배송</label>
+      <input type="radio" name="dilivery" id="dawn" value="dawn">
+      <span>새벽 배송</span><br>
+      <button type="button" name="add" id="add" value="add">장바구니 담기</button>
+      <button type="button" name="cancle_b" id="cancle_b" value="cancle_b">취소</button>
+    </form>
+    </div>
+    <br>
+    <br>
+      <form action="delivery.php" method="POST">
+        <label for="name">일반배송 : </label>
+        <input type="checkbox" name="select-all" id="select-all-n" value="select-all">
+        <label for="select-all">전체 선택</label>
+        <button type="button" name="del_n" id="del_n" value="del_n">선택 삭제</button>
+        <button type="button" name="move_d" id="move_d" value="move_d">새벽 배송으로 이동</button>
+        <br><br>
+        <table class="nomal-shipping" id="nomal_table">
+          <tr>
+            <td>선택</td>
+            <td>상품 이미지</td>
+            <td>상품 이름</td>
+            <td>상품 개별 가격</td>
+            <td>상품 개수</td>
+            <td>상품 구매 가격</td>
+          </tr>
+          <tbody id="nomal_cart">
+          </tbody>
+          <tr>
+            <td colspan="5">총 가격</td>
+            <td id="nomal_sum">0</td>
+          </tr>
+        </table>
+      </form>
+    <br><br>
+
+
+      <form action="delivery_d.php" method="POST">
+        <label for="name">새벽배송 : </label>
+        <input type="checkbox" name="select-all" id="select-all" value="select-all">
+        <label for="select-all">전체 선택</label>
+        <button type="button" name="del_d" id="del_d" value="del_d">선택 삭제</button>
+        <button type="button" name="move_n" id="move_n" value="move_n">일반 배송으로 이동</button>
+        <br><br>
+        <table class="dawn-shipping">
+          <tr>
+            <td>선택</td>
+            <td>상품 이미지</td>
+            <td>상품 이름</td>
+            <td>상품 개별 가격</td>
+            <td>상품 개수</td>
+            <td>상품 구매 가격</td>
+          </tr>
+          <tbody id="dawn_cart">
+          </tbody>
+          <tr>
+            <td colspan="5">총 가격</td>
+            <td id="dawn_sum">0</td>
+          </tr>
+        </table>
+      </form>
+    <br><br>
+
+
+    <label for="name">상품 이름 : </label>
+    <input id="name" name="name" type="text" required><br>
+    <span>가격 범위 : </span>
+    <input id="price1" name="price" type="text" required>
+    <input id="price2" name="price" type="text" required><br>
+    <button type="button" name="search" id="search" value="search">검색</button>
+    <button type="button" name="color" id="color" value="color">원래 색으로 바꾸기</button>
+    <script src="main.js"></script>
+
+  </body>
+</html>

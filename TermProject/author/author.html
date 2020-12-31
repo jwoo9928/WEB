@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>term_project</title>
+        <link href="../main.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+      </head>
+      <body>
+        <table class="top_bar">
+            <tr>
+              <td ><i id="menu"><img src="../imgs/menu.png" alt="" width="30" height="30"></i></td>
+              <td><i onclick="move_main()">온라인 전시회</i></td>
+              <td id="member"></td>
+              <td id="logout"></td>
+            </tr>
+          </table>
+          <div class="author-data">
+          </div>
+          <table class="tables">
+            <tr>
+                <td style="border: 1px solid black;">
+                    작가 이력
+                    <div id="career"></div><br>
+                    <img src="./twitter.png" width="40px" id="twitter">
+                    <img src="./facebook.png" width="40px" id="facebook">
+                    <img src="./instar.png" width="40px" id="instar">
+                </td>
+                <td style="border: 1px solid black;">
+                    작가 설명
+                    <p id="name"></p>
+                    <div id="explain"></div>
+                </td>
+            </tr>
+        </table>
+        <div class="author-data" id="authorArt">
+          <input type="button" value="작품 더보기" onclick="authorExhibition()"><br>
+          <p>최근 작품</p><br>
+        </div><br>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../main.js"></script>
+        <script src="./author.js"></script>
+      </body>
+</html>
